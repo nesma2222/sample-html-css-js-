@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Real login page</title>
+
+    </head>
+    <body>
+    <h1>Employee Login</h1>
+    <input type="text" id="user" placeholder="Username"><br><br>
+    <input type="password" id="pass" placeholder="Password"><br><br>
+
+    <button type="button" onclick="login()">Login</button>
+    <p id="result"></p>
+    <script>
+        function login() {
+            var u=document.getElementById("user").value;
+            var p=document.getElementById("pass").value;
+
+            if(u==="admin" && p==="1234") {
+                document.getElementById("result").innerHTML="Login Successfull";
+            } else {
+                document.getElementById("result").innerHTML="Inavlid Login";
+            }
+        }
+ </script>
+</body>
+</html>
